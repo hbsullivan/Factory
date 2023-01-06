@@ -93,7 +93,6 @@ namespace Factory.Controllers
     {
       // if (!ModelState.IsValid)
       // {
-      //   ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name");
       //   return View();
       // }
       // else

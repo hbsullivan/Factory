@@ -15,14 +15,14 @@
 
 ## Description
 
-_This program allows for the user to keep track of their engineers and their machines. The user can click on an engineer and see all machines associated with that engineer and vice versa. _
+_This program allows for the user to keep track of their engineers and their machines. The user can click on an engineer and see all machines associated with that engineer and vice versa._
 
 ## Setup/Installation Requirements
 
 ### Run project
 * _Clone the repo from GitHub_
 * _Navigate to the project root directory_
-* _Create a file called ```appsettings.json``` _
+* _Create a file called ```appsettings.json```_
 * _Within the newly created file add the following code:_
 ```
 {

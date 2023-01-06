@@ -20,3 +20,27 @@
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
+
+
+@* @{
+  Layout = "_Layout";
+}
+@model Factory.Models.Engineer
+
+<h2>Assign a machine</h2>
+
+<p>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
+
+<h4>Assign a machine to @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.EngineerId)
+
+  @Html.Label("Select Machine")
+  @Html.DropDownList("MachineId")
+
+  <input type="submit" value="Assign" />
+}
+
+<p>@Html.ActionLink("Back to list", "Index")</p> *@

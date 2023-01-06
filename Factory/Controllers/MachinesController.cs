@@ -24,12 +24,20 @@ namespace Factory.Controllers
     {
       return View();
     }
+
     [HttpPost]
     public ActionResult Create(Machine machine)
     {
+      if (!ModelState.IsValid)
+      {
+        return View();
+      }
+      else
+      {
       _db.Machines.Add(machine);
       _db.SaveChanges();
       return RedirectToAction("Index");
+      }
     }
 
     public ActionResult Details(int id)
